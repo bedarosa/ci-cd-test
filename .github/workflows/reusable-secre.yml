@@ -7,6 +7,6 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: bedarosa/ci-cd-workflows/.github/workflows/test-secret-workflow.yml.yml@master
+    uses: bedarosa/ci-cd-workflows/.github/workflows/test-secret-workflow.yml@master
     secrets:
       API_KEY: ${{ secrets.TEST_SECRET }}
