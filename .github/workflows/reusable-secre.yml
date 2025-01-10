@@ -1,0 +1,12 @@
+name: Call Reusable Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable-workflow:
+    uses: bedarosa/ci-cd-workflows/.github/workflows/reusable-workflow.yml@main
+    secrets:
+      API_KEY: ${{ secrets.API_KEY }}
